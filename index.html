@@ -1,171 +1,4 @@
-Hello!RareTECH
-<!-- 👇下の文字をh1で挟んでください -->
-<h1>1番目に大きい文字</h1>
-<!-- 👇下の文字をh2で挟んでください -->
-<h2>2番目に大きい文字</h2>
-<!-- 👇下の文字をh3で挟んでください -->
-<h3>3番目に大きい文字</h3>
-<!-- 👇下の文字をh4で挟んでください -->
-<h4>4番目に大きい文字</h4>
-<!-- 👇下の文字をh5で挟んでください -->
-<h5>5番目に大きい文字</h5>
-
-<p>HTMLは、ウェブページを作るための言語です。<br>
-<br>
-  タグを使ってテキストや画像を表示できます。<br>
-<br>
-ブラウザはタグを解釈して、ページを適切に表示します。</p>
-
-<img src="image/dolphin.png" alt="イルカの画像">
-
-<img src="image/panda.png" alt="パンダの画像">
-
-<img src="image/tiger.png" alt="トラの画像">
-
-<h1>プログラミング言語の詳細表</h1>
-
-<table borfer="1">
-  <thead>
-    <tr>
-     <th>プログラミング言語</th>
-     <th>発表年</th>
-     <th>説明</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-     <td>Python</td>
-     <td>1991年</td>
-     <td>高度な汎用プログラミング言語</td>
-  </tr>
-  <tr>
-    <td>Javascript</td>
-    <td>1995年</td>
-    <td>Web開発でよく使われている</td>
-  </tr>
-  <tr>
-    <td>Go</td>
-    <td>2009年</td>
-    <td>Googleによって開発された言語</td>
-  </tr>
-  </tbody>
-</table>
-
-<h1>エンベーダーでLinuxを学ぼう！</h1>
-
-<a href="https://envader.plus/" target="_blank" >エンベーダーでLinuxを学ぶ</a>
-
-<p>目次</p>
-
-<ol>
-  <li>目次１</li>
-  <li>目次２
-    <ol>
-     <li>目次２－１</li>
-     <li>目次２－２</li>
-    </ol>
-    
-  </li>
-</ol>
-
-<div class="toc">
-  <div>
-  目次
-  </div>
-  <!-- ここに目次用のリストを作ってください -->
-  <ol>
-  <li>見出し1</li>
-  <li>
-    見出し2
-    <ol>
-    <li>見出し2-1</li>
-    <li>見出し2-2</li>
-    </ol>
-  </li>
-  </ol>
-</div>
-
-<h1>目次</h1>
-<ul>
-  <li><a href="#section1">セクション1に移動</a></li>
-  <li><a href="#section2">セクション2に移動</a></li>
-  <li><a href="#section3">セクション3に移動</a></li>
-</ul>
-
-<h2 id="section1">セクション1</h2>
-<p>ここはセクション1の内容です。</p>
-
-<h2 id="section2">セクション2</h2>
-<p>ここはセクション2の内容です。</p>
-
-<h2 id="section3">セクション3</h2>
-<p>ここはセクション3の内容です。</p>
-
-<!DOCTYPE html>
-<html lang="ja">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="discription" content="このページは私の自己紹介です">
-    <title>私のウェブページ</title> 
-  </head>
-  <body>
-    <h1>私の自己紹介</h1>
-    <p>私はweb開発を学んでいます</p>
-  </body>
-</html>
-
-<!DOCTYPE html>
-<html lang="ja">
-  <head>
-    <meta charaset="UTF-8">
-    <meta name="viewport" content="width=device-width, inital-scale=1.0">
-    <title>サンプルサイト</title>
-    <link rel="stylesheet" herf="style.css">
-  </head>
-  <body>
-    <header class="header">
-      <h1>サンプルサイト</h1>
-      <nav class="global-nav">
-        <ul>
-          <li><a herf="#">トップページ</a></li>
-          <li><a herf="#">サービス紹介</a></li>
-          <li><a herf="#">製品情報</a></li>
-          <li><a herf="#">ご連絡</a></li>
-        </ul>
-      </nav>
-    </header>
-
-    <main class="container">
-      <article class="main">
-        <section class="article">
-          <h2>ニュース１</h2>
-          <p>ここにニュースの内容が表示されます</p>
-        </section>
-
-        <section class="areticle">
-          <h2>ニュース２</h2>
-          <p>ここにニュースの内容が表示されます</p>
-        </section>
-      </article>
-
-      <asid class="related">
-        <h2>おすすめリンク</h2>
-        <ul>
-          <li><a herf="#"> リンクA</a></li>
-        <li><a herf="#"> リンクB</a></li>
-        <li><a herf="#"> リンクC</a></li>
-        </ul>        
-      </asid>
-    </main>
-
-    <footer class="footer">
-      <p>&copy; 2024 サンプルサイト. All right reserved.</p>
-    </footer>
-  </body>
-</html>
-
-
-<from action="/submit" method="POST">
+<form action="/submit" method="POST">
   <label for="username">名前:</label>
   <input type="text" id="username" name="username" placeholder="名前を入力" required>
 
@@ -185,5 +18,21 @@ Hello!RareTECH
 </label>
 
 <input type="submit" value="送信">
-</from>
+</form>
 
+<form action="/submit" method="POST">
+  <label for="feedback">フィードバック:</label>
+  <div>
+  <textarea id="feedback" name="feedback" rows="5" placeholder="フィードバックをここに入力してください"></textarea>
+  </div>
+  <label for="transport">交通手段を選択:</label>
+  <select id="transport" name="transport">
+    <option value="car">車</option>
+    <option value="bike">自転車</option>
+    <option value="train">電車</option>
+    <option value="bus">バス</option>
+    <option value="plane">飛行機</option>
+  </select>
+
+  <input type="submit" value="送信">
+</form>
