@@ -1,30 +1,32 @@
-body {
-  display: flex;
-  flex-direction: column;
-}
-
-main {
-  display: flex;
-  flex-direction: row;
-}
-
-.content {
-  padding-right: 50px;
-  margin-right: 20px;
+.humidity {
+  margin-left: 30px;
 }
 
 
-/* contentクラスの中にあるh2要素とp要素に適用するスタイル */
-.content h2{
-    font-size: 32px;
-    color: #6b8e23
-}
-
-.content p{
+/* todayクラスに適用するスタイル */
+.today{
     font-size: 20px;
-    color: #20B2AA
 }
-/* sideクラスの中にあるh3要素直下の要素に適用するスタイル */
-.side h3 + p{
-    color: red;
+span{
+    background-color: #FFC0CB;
+    display:inline-block;
+    height: 28px
+}
+/* temperatureクラスに適用するスタイル */
+.temperature{
+    background-color: #FFD8B2;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+}
+/* humidityクラスに適用するスタイル */
+.humidity{
+    background-color: #ADD8E6;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+}
+/* img要素に適用するスタイル */
+img{
+    display: block;
 }
