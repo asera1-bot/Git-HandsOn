@@ -1,45 +1,30 @@
-/* 6つのp要素に適用するスタイルを宣言 */
-p{
-    background-color:blue;
-    color:white;    
+body {
+  display: flex;
+  flex-direction: column;
 }
 
-#yellow{
-    color:yellow;
+main {
+  display: flex;
+  flex-direction: row;
 }
 
-#red{
+.content {
+  padding-right: 50px;
+  margin-right: 20px;
+}
+
+
+/* contentクラスの中にあるh2要素とp要素に適用するスタイル */
+.content h2{
+    font-size: 32px;
+    color: #6b8e23
+}
+
+.content p{
+    font-size: 20px;
+    color: #20B2AA
+}
+/* sideクラスの中にあるh3要素直下の要素に適用するスタイル */
+.side h3 + p{
     color: red;
-}
-/* 6つのli要素に適用するスタイルを宣言 */
-li{
-    font-size: 16px;
-}
-
-.string-yellow{
-    color:yellow;
-}
-
-.string-blue{
-    color:blue;
-}
-
-.string-red{
-    color:red;
-}
-
-.back-gray{
-    background-color: gray;
-}
-
-.back-green{
-    background-color: green;
-}
-
-.back-brown{
-    background-color: brown;
-}
-
-#small{
-    font-size: 12px;
 }
