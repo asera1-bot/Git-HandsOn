@@ -1,32 +1,23 @@
-.humidity {
-  margin-left: 30px;
+/* h1要素に適用するスタイル */
+h1{
+    font-size: 32px;
+    color: white;
+    background-color: midnightblue;
+    text-align: center;
 }
-
-
-/* todayクラスに適用するスタイル */
-.today{
-    font-size: 20px;
+/* h3要素に適用するスタイル */
+div{
+    height: 50px;
 }
-span{
-    background-color: #FFC0CB;
-    display:inline-block;
-    height: 28px
+h3{
+    color: white;
+    background-color: deepskyblue;
+    line-height: 50px;
+    text-align: center;
 }
-/* temperatureクラスに適用するスタイル */
-.temperature{
-    background-color: #FFD8B2;
-    display: inline-block;
-    width: 40px;
-    height: 20px;
-}
-/* humidityクラスに適用するスタイル */
-.humidity{
-    background-color: #ADD8E6;
-    display: inline-block;
-    width: 40px;
-    height: 20px;
-}
-/* img要素に適用するスタイル */
-img{
-    display: block;
+/* p要素に適用するスタイル */
+p{
+    color: white;
+    background-color: #3766AB;
+    text-align: center;
 }
