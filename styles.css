@@ -1,72 +1,41 @@
-* {
-  padding: 0;
-  margin: 0;
+.container {
+  width: 1200px;
+  margin: auto;
+  background-color: cadetblue;
 }
 
-body {
-  max-width: 1040px;
-  margin: 0 auto;
-}
-
-header {
-  width: 100%;
-  margin-top: 20px;
-}
-
-li {
-  list-style-type: none;
-}
-
-a {
-  text-decoration: none;
-  color: black;
-}
-
-main {
-  flex-wrap: wrap;
-}
-
-div {
-  background-color: darkblue;
-  color: white;
-}
-
-footer {
-  font-size: 12px;
-}
-
-
-/* body要素にスタイルを適用 */
-body{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 50px;
-}
-/* header要素にスタイルを適用 */
-header{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-end;
-}
-/* ul要素にスタイルを適用 */
-ul{
-  display: flex;
-  flex-direction: row;
-  gap: 24px;
-}
-/* div要素にスタイルを適用 */
-div{
-  width: 200px;
-  height: 200px;
+div div {
+  outline: 1px black solid;
+  background-color: bisque;
   text-align: center;
-  line-height: 200px;
 }
-/* main要素にスタイルを適用 */
-main{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 10px;
+
+
+/* 1. containerクラスにスタイルを適用 */
+.container{
+  display: grid;
+  grid-template-rows: 100px 100px 100px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+/* 2. containerクラスにスタイルを適用 */
+.container{
+  display: grid;
+  grid-template-rows: 100px 100px 100px;
+  grid-template-columns: 100px 100px 100px;
+  justify-content: space-evenly;
+}
+/* 3. containerクラスにスタイルを適用 */
+.container{
+  display: grid;
+  grid-template-rows: 100px 100px 100px;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: end;
+}
+/* 4. containerクラスにスタイルを適用 */
+.container{
+  display: grid;
+  grid-template-rows: 100px 100px 100px;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: stretch;
+  gap: 10px 150px;
 }
