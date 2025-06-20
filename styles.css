@@ -1,14 +1,60 @@
-/* p要素に適用するスタイル */
-p{
-    display: inline-block;
-    background-color: #00008B;
-    width: 160px;
-    text-align: center;
-    color: white;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-right: 20px;
-    border-style: dotted ridge solid;
-    border-color: yellow yellow red;
-    border-width: 5px 10px;
+body {
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+header {
+  background-color: #192F60;
+  color: white;
+  margin-top: 10px;
+}
+
+h1, h3 {
+  text-align: center;
+  margin: 0;
+  padding: 10px 0;
+}
+
+div {
+  display: flex;
+  background-color: #FAC559;
+  height: 160px;
+}
+
+ul {
+  padding: 0;
+  margin:12px 0;
+}
+
+li {
+  list-style: none;
+  font-size: 12px;
+  width: 244px;
+  padding: 2px 8px 2px 2px;
+  margin: 4px 10px 4px 0;
+}
+
+main {
+  width: auto;
+}
+
+
+/* li要素にスタイルを適用 */
+li{
+    border: #192F60 1px solid;
+    border-radius: 8px;
+}
+/* header要素にスタイルを適用 */
+header {
+    border-radius: 20px 20px 0 0;
+}
+/* div要素にスタイルを適用 */
+div{
+    border-radius: 0 0 20px 20px;
+}
+/* main要素内にスタイルを適用 */
+main{
+    overflow: auto;
 }
