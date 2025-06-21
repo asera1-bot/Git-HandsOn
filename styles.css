@@ -1,41 +1,57 @@
-.container {
-  width: 1200px;
-  margin: auto;
-  background-color: cadetblue;
-}
-
-div div {
-  outline: 1px black solid;
-  background-color: bisque;
+div > div {
   text-align: center;
 }
 
+.item1 {
+  background-color: darkkhaki;
+}
 
-/* 1. containerクラスにスタイルを適用 */
-.container{
-  display: grid;
-  grid-template-rows: 100px 100px 100px;
-  grid-template-columns: 1fr 1fr 1fr;
+.item2 {
+  background-color: aqua;
 }
-/* 2. containerクラスにスタイルを適用 */
+
+.item3 {
+  background-color: blueviolet;
+}
+
+.item4 {
+  background-color: green;
+}
+
+.item5 {
+  background-color: cadetblue;
+}
+
+.item6 {
+  background-color: crimson;
+}
+
+
+/* containerクラスのdiv要素にスタイルを適用 */
 .container{
   display: grid;
-  grid-template-rows: 100px 100px 100px;
+  grid-template-rows: 100px 100px 100px 100px;
   grid-template-columns: 100px 100px 100px;
-  justify-content: space-evenly;
 }
-/* 3. containerクラスにスタイルを適用 */
-.container{
-  display: grid;
-  grid-template-rows: 100px 100px 100px;
-  grid-template-columns: 1fr 1fr 1fr;
-  align-items: end;
+/* item〇クラスにスタイルを適用 */
+.item2{
+  grid-row: span 2;
 }
-/* 4. containerクラスにスタイルを適用 */
-.container{
-  display: grid;
-  grid-template-rows: 100px 100px 100px;
-  grid-template-columns: 1fr 1fr 1fr;
-  align-items: stretch;
-  gap: 10px 150px;
+
+.item3{
+   grid-column: 1;
+   grid-row: 3 / span 2; 
+  }
+
+.item4{
+  grid-column: 3;
+}
+
+.item5{
+  grid-column: 3;
+}
+
+.item6{
+  grid-column:span 2;
+  grid-row:span 2;
 }
